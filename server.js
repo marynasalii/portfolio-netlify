@@ -15,7 +15,7 @@ app.get('/download', function (req, res) {
     res.download(file);
 });
 
-module.exports.handler = serverless(app);
-
 app.listen(process.env.PORT || port);
+
+module.exports.handler = serverless(app);
 
