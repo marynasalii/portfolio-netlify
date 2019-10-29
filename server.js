@@ -1,4 +1,5 @@
 var express = require('express');
+var serverless = require('serverless-http');
 var app = express();
 
 const port = 5000;
@@ -14,4 +15,7 @@ app.get('/download', function (req, res) {
     res.download(file);
 });
 
+module.exports.handler = serverless(app);
+
 app.listen(process.env.PORT || port);
+
