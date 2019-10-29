@@ -1,0 +1,279 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Maryna | Web Dev</title>
+	<meta name="description" content="Portfolio">
+	<meta name="author" content="Maryna">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+
+	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css">
+	<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/solid.min.css">
+	<link rel="stylesheet" href="/public/build/style.css">
+
+</head>
+
+<body class="antialiased">
+
+	<header id="main-header">
+		<div class="container">
+			<div class="flex justify-end">
+				<label for="nav-open" class="mt-10 cursor-pointer">
+					<svg viewBox="0 0 24 24" width="24" height="24" fill="#243B53">
+						<path class="heroicon-ui"
+							d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+					</svg>
+				</label>
+				<input class="hidden" type="checkbox" id="nav-open" />
+			</div>
+		</div>
+		<nav class="hidden h-screen w-screen fixed bg-green-100 inset-0 z-10" id="nav">
+			<div class="container flex relative items-center justify-center">
+				<label for="nav-close" class="mt-10 mr-10 cursor-pointer absolute top-0 right-0">
+					<svg fill="#334E68" viewBox="0 0 20 20" width="20" height="20" class="">
+						<path
+							d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+					</svg>
+				</label>
+				<input class="hidden" type="checkbox" id="nav-close" />
+				<ul class="">
+					<li class="text-center pt-4 pb-4"><a class="text-3xl font-medium text-gray-300 nav-item" href="#who-i-am">Who I
+							am.</a></li>
+					<li class="text-center pt-4 pb-4"><a class="text-3xl font-medium text-gray-300 nav-item" href="#what-i-do">What I
+							do.</a></li>
+					<li class="text-center pt-4 pb-4"><a class="text-3xl font-medium text-gray-300 nav-item"
+							href="#testemonials">Testemonials.</a></li>
+					<li class="text-center pt-4 pb-4"><a class="text-3xl font-medium text-gray-300 nav-item" href="#what-i-use">What I
+							use.</a></li>
+					<li class="text-center pt-4 pb-4"><a class="text-3xl font-medium text-gray-300 nav-item" href="#contact">Contact.</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- </div> -->
+		<div class="flex flex-col items-center m-auto pb-64 pt-48 lg:pb-56 lg:pt-40">
+			<p class="text-gray-300 tracking-wider text-base lg:text-xl text-shadow">Oh, hi there!</p>
+			<h1
+				class="text-gray-300 text-center mt-5 mb-5 tracking wide leading-normal text-shadow text-2xl lg:text-4xl lg:mt-8 lg:mb-8">
+				My name is Maryna and I'm a Web Developer</h1>
+			<a href="#contact" class="bg-purple-300 text-white rounded-lg font-medium pt-2 pb-2 text-tiny pr-8 pl-8 shadow-outline
+				lg:text-base lg:pt-3 lg:pb-3">
+				Contact me
+		</a>
+		</div>
+		<!-- </div> -->
+	</header>
+
+	<section id="who-i-am" class="bg-purple-200 pt-8 pb-8 lg:pt-16 lg:pb-40">
+		<div class="container">
+			<h2 class="vertical-line-white pl-2 text-white text-lg font-bold">Who I am</h2>
+			<div class="flex flex-col mt-8 items-center lg:flex-row lg:ml-auto lg:w-5/6">
+				<img class="w-56 rounded-full lg:w-2/6" src="public/img/profile-pic.jpg" alt="Profile picture">
+				<div class="flex flex-col items-center text-left lg:items-start lg:ml-24">
+					<p class="text-white text-base mt-8 mb-8 leading-relaxed lg:w-4/5">
+						I’m a 23-years old web developer with 2 years of experience based in Waterloo, ON.
+						<br><br>
+						I earned my <span>Bachelor's Degree in Computer Science</span> in 2016 at <span>National
+							Aviation University</span> in
+						Kyiv, Ukraine.
+						Shorty after I moved to Canada and completed a <span>Computer Applications Development</span>
+						program in
+						<span>Conestoga College</span>.
+						I can speak Ukrainian, Russian and English languages. <br> <br>
+						Currently work at <a class="font-medium underline text-green-200"
+							href="https://www.linkedin.com/company/oticon-canada-ltd-/">Oticon Canada</a> as a front-end
+						developer, helping
+						clinics to receive high-quality hearing aids.
+					</p>
+					<a href="/download"
+						class="bg-green-200 text-white block rounded-lg font-medium pt-2 pb-2 text-tiny pr-8 pl-8 shadow-outline lg:text-base lg:pt-3 lg:pb-3 ">Download
+						resume</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="what-i-do" class="bg-green-100 pt-8 pb-8 lg:pt-16 lg:pb-32">
+		<div class="container">
+			<h2 class="vertical-line-gray pl-2 text-gray-300 text-lg font-bold">What I do</h2>
+			<div class="lg:flex lg:flex-wrap lg:-mt-48">
+				<div class="flex flex-col items-center mt-8 flex-1 lg:items-end lg:mt-10">
+					<div class="flex flex-col items-center w-56 p-4 bg-white rounded shadow-outline lg:w-2/4">
+						<img src="public/img/modern-coding-icon.svg" alt="Modern coding icon">
+						<p class="text-base text-gray-300 text-center pt-4 lg:self-start lg:text-left">Modern <br>Coding
+						</p>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center mt-10 flex-1">
+					<div class="flex flex-col items-center w-56 p-4 bg-white rounded shadow-outline lg:w-2/4">
+						<img src="public/img/website-design-icon.svg" alt="Website design icon">
+						<p class="text-base text-gray-300 text-center pt-4 lg:self-start lg:text-left">Website <br>
+							Design</p>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center mt-10 flex-1 lg:items-end">
+					<div class="flex flex-col items-center w-56 p-4 bg-white rounded shadow-outline lg:w-2/4">
+						<img src="public/img/cross-browser-dev.svg" alt="Cross-browser dev">
+						<p class="text-base text-gray-300 text-center pt-4 lg:self-start lg:text-left">Cross-Browser
+							<br> Development</p>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center mt-10 flex-1">
+					<div class="flex flex-col items-center w-56 p-4 bg-white rounded shadow-outline lg:w-2/4">
+						<img src="public/img/responsive-icon.svg" alt="Responsive and mobile-friendly">
+						<p class="text-base text-gray-300 text-center pt-4 lg:self-start lg:text-left">Responsive & <br>
+							Mobile-Friendly</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testemonials" class="flex flex-col bg-white pt-8 pb-8 lg:pt-10 lg:pb-10">
+		<div class="container">
+			<h2 class="vertical-line-gray pl-2 text-gray-300 text-lg font-bold">Testemonials</h2>
+			<div class="m-auto mt-4 lg:w-3/4 lg:m-auto">
+				<svg class="mr-auto" width="60" height="60" viewBox="0 0 128 128" fill="none">
+					<path
+						d="M96.0001 59.9999C94.6608 60.0108 93.3241 60.1177 92.0001 60.3199C92.3521 54.2841 94.2187 48.4343 97.4274 43.31C100.636 38.1858 105.084 33.9522 110.36 30.9999C113.76 29.0799 117.6 26.0799 115.36 20.9999C115.027 20.0099 114.49 19.1002 113.786 18.3289C113.081 17.5576 112.224 16.9416 111.268 16.5201C110.312 16.0986 109.279 15.8809 108.234 15.8809C107.189 15.8808 106.156 16.0985 105.2 16.5199L104.36 16.8399C82.6001 24.9599 64.0001 47.9999 68.0001 87.9999C69.4801 104 80.5201 116 96.0001 116C103.426 116 110.548 113.05 115.799 107.799C121.05 102.548 124 95.426 124 87.9999C124 80.5738 121.05 73.4519 115.799 68.2009C110.548 62.9499 103.426 59.9999 96.0001 59.9999Z"
+						fill="#51279B" fill-opacity="0.27" />
+					<path
+						d="M32 59.9999C30.6607 60.0108 29.324 60.1177 28 60.3199C28.352 54.2841 30.2186 48.4343 33.4273 43.31C36.6361 38.1858 41.0838 33.9522 46.36 30.9999C49.76 29.0799 53.6 26.0799 51.36 20.9999C51.0264 20.0099 50.4903 19.1002 49.7857 18.3289C49.0811 17.5576 48.2235 16.9416 47.2676 16.5201C46.3117 16.0986 45.2785 15.8809 44.2338 15.8809C43.1891 15.8808 42.1559 16.0985 41.2 16.5199L40.36 16.8399C18.6 24.9599 -8.10623e-06 47.9999 3.99999 87.9999C5.47999 104 16.52 116 32 116C35.677 116 39.318 115.276 42.7151 113.869C46.1122 112.461 49.1989 110.399 51.799 107.799C54.399 105.199 56.4615 102.112 57.8686 98.715C59.2757 95.3179 60 91.6769 60 87.9999C60 84.3229 59.2757 80.6819 57.8686 77.2848C56.4615 73.8876 54.399 70.8009 51.799 68.2009C49.1989 65.6009 46.1122 63.5384 42.7151 62.1313C39.318 60.7241 35.677 59.9999 32 59.9999Z"
+						fill="#51279B" fill-opacity="0.27" />
+				</svg>
+
+				<p class="text-base text-left font-medium leading-relaxed text-gray-400 -mt-8 lg:text-center">
+					It is an absolute joy to recommend Maryna.
+					During our time working together I've found her to be
+					professional, fun, dedicated and intelligent.</p>
+				<p class="text-gray-300 text-left text-tiny mt-6 lg:text-center">- <span class="font-bold">Matt
+						Benvenuti</span><br> Business Systems Administrator,
+					Oticon Canada</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="what-i-use" class="bg-purple-200 pt-8 pb-32 lg:pt-16">
+		<div class="container">
+			<h2 class="vertical-line-white pl-2 text-white text-lg font-bold">What I use</h2>
+			<div class="flex flex-wrap custom-ml-19 pb-56 lg:pb-32">
+				<div class="flex flex-row items-center mt-8 flex-0 md:flex-1 lg:flex-2 lg:mt-16">
+					<a href="https://html.com/">
+						<div class="w-16 h-16 bg-purple-100 rounded-full relative icon-circle">
+							<i class="fab fa-html5 fa-2x text-purple-200"></i>
+						</div>
+					</a>
+					<div class="flex flex-col ml-4">
+						<p class="text-white">HTML 5</p>
+						<p class="text-white">CSS 3</p>
+					</div>
+				</div>
+
+				<div class="flex flex-row items-center mt-6 flex-0 md:flex-1 lg:flex-2 lg:mt-16">
+					<a href="https://tailwindcss.com/">
+						<div class="w-16 h-16 bg-purple-100 rounded-full relative icon-circle">
+							<i class="fab fa-css3 fa-2x text-purple-200"></i>
+						</div>
+					</a>
+					<div class="flex flex-col ml-4">
+						<p class="text-white">Bootstrap</p>
+						<p class="text-white">Tailwind CCS</p>
+						<p class="text-white">SCSS/LESS</p>
+					</div>
+				</div>
+
+				<div class="flex flex-row items-center mt-6 flex-0 md:flex-1 lg:flex-2 lg:mt-16">
+					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+						<div class="w-16 h-16 bg-purple-100 rounded-full relative icon-circle">
+							<i class="fab fa-node-js fa-2x text-purple-200"></i>
+						</div>
+					</a>
+					<div class="flex flex-col ml-4">
+						<p class="text-white">JavaScript</p>
+						<p class="text-white">JQuery</p>
+					</div>
+				</div>
+
+				<div class="flex flex-row items-center mt-6 flex-0 md:flex-1 lg:flex-2  lg:mt-16">
+					<a href="https://webpack.js.org/">
+						<div class="w-16 h-16 bg-purple-100 rounded-full relative icon-circle">
+							<i class="fab fa-gulp fa-3x text-purple-200"></i>
+						</div>
+					</a>
+					<div class="flex flex-col ml-4">
+						<p class="text-white">Grunt</p>
+						<p class="text-white">Gulp</p>
+						<p class="text-white">Webpack</p>
+					</div>
+				</div>
+
+				<div class="flex flex-row items-center mt-6 flex-0 md:flex-1 lg:flex-2 lg:mt-16">
+					<a href="https://en.wikipedia.org/wiki/SQL">
+						<div class="w-16 h-16 bg-purple-100 rounded-full relative icon-circle">
+							<i class="fas fa-database fa-2x text-purple-200"></i>
+						</div>
+					</a>
+					<div class="flex flex-col ml-4">
+						<p class="text-white">MS-SQL DB</p>
+						<p class="text-white">MySQL</p>
+					</div>
+				</div>
+
+				<div class="flex flex-row items-center mt-6 flex-0 md:flex-1 lg:flex-2 lg:mt-16">
+					<a href="https://git-scm.com/">
+						<div class="w-16 h-16 bg-purple-100 rounded-full relative icon-circle">
+							<i class="fas fa-code-branch fa-2x text-purple-200"></i>
+						</div>
+					</a>
+					<div class="flex flex-col ml-4">
+						<p class="text-white">Git</p>
+						<p class="text-white">Mercurial</p>
+					</div>
+				</div>
+				<p class="text-white mt-16">I also have some experience working with <a
+						class="font-medium underline text-green-200" href="https://dotnet.microsoft.com/apps/aspnet">ASP.NET</a>, <a
+						class="font-medium underline text-green-200" href="https://www.nopcommerce.com/">NopCommerce</a> and <a
+						class="font-medium underline text-green-200" href="https://angularjs.org/">AngularJS</a>.
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+	<footer id="footer" class="flex flex-row bg-gray-300 pb-8 -mt-48 lg:-mt-32">
+		<div class="container">
+			<div id="contact"
+				class="flex flex-col justify-center -mt-24 relative overflow-hidden h-48 m-auto bg-white rounded shadow-outline lg:h-32 lg:-mt-16">
+				<p class="text-gray-400 text-center pt-6 pr-6 pl-6 lg:pl-2 lg:pr-2 lg:pt-2">
+					If you wanna chat just shoot me a direct message via <a href="mailto:marynasalii@gmail.com" class="font-medium underline text-green-200">email</a> or hit me up through social media listed
+					below!
+				</p>
+				<a href="mailto:marynasalii@gmail.com"
+					class="text-white bg-green-200 rounded-lg m-auto font-medium pt-2 pb-2 mt-4 mb-6 text-tiny pr-8 pl-8 shadow lg:mb-2">
+					Let's chat
+				</a>
+			</div>
+			<div class="mt-32 text-center social">
+				<a href="https://github.com/marynasalii" class="pr-4 pl-4">
+					<i class="fab fa-github text-2xl text-gray-100"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/saliimaryna/" class="pr-4 pl-4">
+					<i class="fab fa-linkedin-in text-2xl text-gray-100"></i>
+				</a>
+			</div>
+			<p class="mt-16 text-white text-center">Made with &lt;3 by Maryna</p>
+		</div>
+	</footer>
+
+	<script src="/public/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* GENERAL STYLES */
+
+@font-face {
+  font-family: Poppins Regular;
+  font-weight: 400;
+  src: url(../fonts/poppins-regular-webfont.ttf) format("ttf"),
+    url(../fonts/poppins-regular-webfont.woff) format("woff"),
+    url(../fonts/poppins-regular-webfont.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Poppins ExtraBold;
+  src: url(../fonts/poppins-extrabold-webfont.ttf) format("ttf"),
+    url(../fonts/poppins-extrabold-webfont.woff) format("woff"),
+    url(../fonts/poppins-extrabold-webfont.woff2) format("woff2");
+}
+
+body,
+html {
+  font-family: Poppins Regular;
+}
+
+h1 {
+  font-family: Poppins ExtraBold;
+}
+
+.text-shadow {
+  text-shadow: 0 0 50px hsla(0, 0%, 0%, .2);
+}
+
+.vertical-line-white {
+  border-left: 2px solid #ffffff;
+}
+
+.vertical-line-gray {
+  border-left: 2px solid #334E68;
+}
+
+@media screen and (min-width: 1024px) {
+  .custom-ml-19 {
+    margin-left: 19rem;
+  }
+}
+
+
+/* HEADER STYLES*/
+
+.visible-flex {
+  display: flex;
+}
+
+#main-header {
+  background-image: url(../img/hypnotize.png);
+  min-height: 28rem;
+}
+
+nav a {
+  -webkit-transition: font-size .2s;
+  transition: font-size .2s ease-in-out;
+}
+
+nav a:hover {
+  font-size: 2.25rem;
+}
+
+.overlay {
+  background-color: hsla(0, 0%, 0%, .5);
+}
+
+
+button {
+  border-radius: 60px;
+}
+
+
+/* WHO I AM SECTION STYLES*/
+
+#who-i-am span {
+  font-family: Poppins ExtraBold;
+}
+
+
+/* WHAT I USE SECTION STYLES*/
+
+.icon-circle {
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s ease-in-out;
+}
+
+.icon-circle:hover {
+  background-color: #ffffff;
+}
+
+.icon-circle i {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* FOOTER SECTION STYLES*/
+
+.social i {
+  -webkit-transition: color .2s;
+  transition: color .2s ease-in-out;
+}
+
+.social i:hover {
+  color: #829AB1;
+}
