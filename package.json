@@ -4,7 +4,9 @@
   "description": "Maryna Salii portfolio website",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "./node_modules/.bin/netlify-lambda serve public",
+    "build": "./node_modules/.bin/netlify-lambda build public",
+    "node": "node server.js",
     "serve": "cross-env NODE_ENV=development concurrently \"postcss public/css/style.css -o public/build/style.css --watch\"  \"live-server .\"",
     "development": "cross-env NODE_ENV=development postcss public/css/style.css -o public/build/style.css",
     "production": "cross-env NODE_ENV=production postcss public/css/style.css -o public/build/style.css"
@@ -13,6 +15,7 @@
     "@fortawesome/fontawesome-free": "^5.10.1",
     "autoprefixer": "^9.5.1",
     "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
     "serverless-http": "^2.3.0",
     "tailwindcss": "^1.0"
   },
