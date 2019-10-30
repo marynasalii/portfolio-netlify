@@ -4,6 +4,9 @@
   "description": "Maryna Salii portfolio website",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+          "start:lambda": "netlify-lambda serve functions",
+          "build:lambda": "netlify-lambda build functions",
     "start": "./node_modules/.bin/netlify-lambda serve public",
     "build": "./node_modules/.bin/netlify-lambda build public",
     "node": "node server.js",
